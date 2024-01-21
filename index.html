@@ -10,7 +10,7 @@
 </head>
 <script src="https://kit.fontawesome.com/3c0f9b352f.js" crossorigin="anonymous"></script>
 <body>
-    <header>
+    <header >
         <nav class="navbar navbar-expand-md p-0 m-0" data-bs-theme="dark">
             <a class="navbar-brand nav-brand" href="#">AMV</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -19,21 +19,22 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav fs-4">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Mi</a>
+                        <a class="nav-link" href="#sobremi">Sobre Mi</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="content_ppal">
+    <div id="inicio"></div>
+    <div class="content_ppal" >
         <article>
             <div class="row-info-ppal">
                 <div class="col-left-info">
@@ -41,8 +42,7 @@
                         <h2>Abel Montes Vega</h2>
                         <h3>Estudiante de Back End Develop</h3>
                         <p>Hola, Mi nombre es Abel Montes Vega. Actualmente estoy 
-                            estudiando Ing. en Sistemas en la UTN y estoy en busca 
-                            de mi primera experiencia laboral en el sector IT. </p>
+                            estudiando Ing. en Sistemas en la UTN y Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ipsa! </p>
                     </div>
                     <div class="left-info-social">
                         <a href="http://">
@@ -53,7 +53,8 @@
                         </a>
                         <a href="http://">
                             <button class="button-cv">
-                                <i class="fa-regular fa-file"> CV</i>
+                                <i class="fa-regular fa-file"></i>
+                                <div>CV</div>
                             </button>
                         </a>
                     </div>
@@ -65,12 +66,12 @@
         </article>
         
         <article>
-            <div class="row-proyects-ppal">
+            <div class="row-proyects-ppal" id="proyectos">
                 <h2 class="article-head">Mis Proyectos</h2>
             </div>
         </article>
         <article>
-            <div class="row-tecnologies-ppal">
+            <div class="row-tecnologies-ppal" id="tecnologias">
                 <h2 class="article-head">Tecnologias y Herramientas</h2>
                 <div class="tecnologies-content">
                     <ul class="tecnologies-list">
@@ -107,7 +108,7 @@
             </div>
         </article>
         <article>
-            <div class="row-aboutme-ppal">
+            <div class="row-aboutme-ppal" id="sobremi">
                 <h2 class="article-head">Sobre Mi</h2>
             </div>
         </article>
