@@ -1,0 +1,268 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body
+{
+    background-color: #212529;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header
+{
+    padding-top: 20px;
+    width: 60%;
+}
+.content_ppal
+{
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+a{
+    text-decoration: none;
+}
+.nav-home
+{
+
+    display: flex;
+    justify-content: space-between;
+}
+.nav-brand
+{
+    color: #dc3545;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.nav-list
+{
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 3em;
+    font-weight: 600;
+}
+.nav-list a
+{
+    color: white;
+}
+.button-toggle-list
+{
+    display: none;
+    padding: .5em;
+    border-radius: 20%;
+    background: none;
+    border: solid .5px white;
+    color: white;
+    cursor: pointer;
+}
+.nav-list-toggle
+{
+    display: none;
+    list-style: none;
+}
+.nav-list-toggle a
+{
+    color: white;
+    font-weight: bold;
+}
+hr
+{
+    width: 2em;
+    margin: .5em;
+    color: white;
+}
+.content_ppal
+{
+    padding-top: 4em;
+    gap: 3em;
+}
+article
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.article-head
+{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+.row-info-ppal
+{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4em;
+}
+.col-left-info
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.left-info-data
+{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .2em;
+}
+.left-info-data h2
+{
+    color: #ffffff;
+    font-size: 2.7em;
+}
+
+.left-info-data h3
+{
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+.left-info-data p
+{
+    color: white;
+    font-size: 1.2em;
+}
+.left-info-social
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: .7em;
+}
+.button-cv
+{
+    padding: .5em 2em;
+    border: 1.5px solid transparent;
+    border-radius: 10%;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+.button-cv:hover
+{
+    background-color: transparent;
+    border: 1.5px solid #dc3545;
+    color: #dc3545;
+}
+.col-right-info
+{
+    display: flex;
+    justify-content: end;
+}
+.col-right-info img
+{
+    border-radius: 50%;
+    height: 16em;
+    width: 16em;
+}
+.row-proyects-ppal
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.row-tecnologies-ppal
+{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+    text-align: center;
+}
+.tecnologies-list
+{
+    list-style: none;
+    display: grid;
+    padding-left: 0;
+    grid-gap: 2em;
+    grid-template: repeat(2,1fr)/repeat(5,1fr);
+}
+.tecnologies-item
+{
+    width: 10em;
+    height: 10em;
+    background-color: #373e46;
+    border-radius: 20%;
+    box-shadow: 0px 0px 10px .5px #1b1d1f;
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a .fa-brands
+{
+    color:white;
+    transition-duration: .4s;
+    font-size: 1.5em;
+}
+a .fa-brands:hover
+{
+    color:#dc3545;
+}
+li .fa-brands
+{
+    font-size: 5em;
+}
+svg
+{
+    width: 5em;
+}
+
+@media (width<1500px)
+{
+    .tecnologies-item
+    {
+        width: 8em;
+        height: 8em;
+    }   aa
+}
+@media (width<900px)
+{
+    .row-info-ppal
+    {
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .col-left-info
+    {
+        gap: 1em;
+    }
+    .left-info-social
+    {
+        justify-content: center;
+    }
+    .tecnologies-list
+    {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1.5em;
+        justify-content: center;
+    }
+}
+@media (width<650px)
+{
+    .nav-list
+    {
+        display: none;
+    }
+    .button-toggle-list
+    {
+        display: block;
+    }
+    .button-toggle-list:active .nav-list-toggle
+    {
+        display: block;
+
+    }
+}
